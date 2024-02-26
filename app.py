@@ -3,8 +3,8 @@ from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 
 # Set default username and password
-DEFAULT_USERNAME = 'admin1'
-DEFAULT_PASSWORD = 'admin1'
+DEFAULT_USERNAME = 'admin'
+DEFAULT_PASSWORD = 'admin'
 
 # Dummy data for the second page
 SECOND_PAGE_FIELDS = ['First Name', 'Last Name', 'ID Number', 'Telephone Number', 'Passport Photo']
