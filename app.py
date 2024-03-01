@@ -23,7 +23,7 @@ def verify():
     if username == DEFAULT_USERNAME and password == DEFAULT_PASSWORD:
         return render_template('second_page.html', fields=SECOND_PAGE_FIELDS)
     else:
-        return "Incorrect username or password. Please try again."
+        return "Incorrect usernames or passwords. Please try again."
 
 
 if __name__ == '__main__':
