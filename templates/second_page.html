@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Second Page</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #ffffff, #cce6ff);
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #000080;
+            animation: text-animation 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes text-animation {
+            0% {
+                font-size: 30px;
+            }
+            100% {
+                font-size: 35px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <h1>WELCOME TO DOCUSAVE APP</h1>
     <form>
         {% for field in fields %}
             <label for="{{ field|lower }}">{{ field }}:</label>
